@@ -12,9 +12,7 @@ function fiboEvenSum(n) {
   }
   let counter = 0;
   for (let num of result) {
-    if (num % 2 === 0) {
-      counter += num;
-    }
+    num % 2 === 0 ? counter += num;
   }
   return counter;
 }
