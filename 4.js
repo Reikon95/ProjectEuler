@@ -3,11 +3,7 @@ function isPalidrome(num) {
   let checker = 0
   let x = (str.length - 1);
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === str[x]) {
-      checker++;
-    } else {
-      console.log('dif');
-    }
+    str[i] === str[x] ? checker++ : checker--;
     x--;
   }
   return checker === 6 ? true : false;
@@ -15,7 +11,6 @@ function isPalidrome(num) {
 console.log(isPalidrome(906609))
 
 function largestPalindromeProduct(n) {
-  // Good luck!
   return true;
 }
 
