@@ -16,8 +16,6 @@ function fiboEvenSum(n) {
   }
   return counter;
 }
-
 fiboEvenSum(10);
 
 //date completed 13/09/2019!
-//f
