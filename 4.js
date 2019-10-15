@@ -13,10 +13,22 @@ function isPalidrome(num) {
 console.log(isPalidrome(0000))
 
 
-function largestPalindromeProduct(n) {
-  return true;
+function findPalidromeProduct(n) {
+  let arr = [1]
+  for (let i = 0; i < n; i++) {
+    arr.push(0)
+  }
+  let value = (Number(arr.join('')) - 1);
+  for (let i = value; i > 0; i--) {
+    console.log(i)
+    let sum = Number(i * value);
+    if (isPalidrome(sum)) {
+      return sum;
+    } 
+  }
 }
 
-largestPalindromeProduct(3);
+console.log(findPalidromeProduct(3));
+
 
 //UNFINISHED
