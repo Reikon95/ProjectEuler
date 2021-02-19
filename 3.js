@@ -15,7 +15,7 @@ function largestPrimeFactor(number) {
     }
   }
   for (let elem of factors) {
-    if (isPrime(elem) === false) {
+    if (isPrime(elem)) {
       primefactors.push(elem);
     } 
   return primefactors[primefactors.length - 1];
