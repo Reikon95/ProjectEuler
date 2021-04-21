@@ -4,7 +4,6 @@ function largestPalindromeProduct(n) {
   for (let i = 0; i < n; i++) {
     startingInt.push('9');    
   }
-  console.log(startingInt)
   num = Number(startingInt.join(''))
   for (let i = num; i > 0; i--) {
     let result = String(i * num);
