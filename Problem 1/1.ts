@@ -13,5 +13,3 @@ function multiplesOf3and5(number: number): number {
   }
   return counter
 }
-
-//Solved 06/09/2019
